@@ -8,8 +8,10 @@ import { UserListComponent } from './user-list/user-list.component';
 import { MainContainerComponent } from './main-container/main-container.component';
 import { HeighlightDirective } from './heighlight.directive';
 import { ImgularPipe } from './imgular.pipe';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import {HttpClientModule}from '@angular/common/http';
 
-@NgModule({
+  @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -17,9 +19,11 @@ import { ImgularPipe } from './imgular.pipe';
     UserListComponent,
     MainContainerComponent,
     HeighlightDirective,
-    ImgularPipe
+    ImgularPipe,
+    ContactUsComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule
   ],
   providers: [],
